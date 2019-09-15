@@ -1,0 +1,86 @@
+终端解决方案：
+1.
+	
+	
+	两套代码
+	web	PC
+	wep	移动
+	
+响应式设计(媒体查询)
+移动端需加viewport
+
+img和视频可以设置最大宽度,但不能设置高度,否则会变形
+
+
+2.Flex(弹性布局)
+主轴(X轴)	交叉轴(Y轴)
+
+一、容器属性：
+	(1)flex-direction	主轴的排列方式,内部元素
+		--row(默认)	按行排列,从左到右
+		--row-reverse	按行排列	从右往左
+		--column	按列排序,从上到下
+		--column-reverse  按列排序,从下往上
+	
+	
+	(2)flex-wrap	是否换行
+		--no-wrap 不换行(默认)
+		--wrap 换行
+		--wrap-reverse	反向换行(新行到最上面,旧行会下去)
+	
+	(3)flex-flow	direction和wrap的合体写法
+		flex-flow: row wrap;
+	
+	(4)justify-content	内容在主轴上的对齐方式
+		--flex-start 	左对齐(默认)
+		--center	 	内容居中
+		--fiex-end		右对齐
+		--space-between	两端对齐
+		--space-around	平均分配大小
+		
+		
+	(5)align-items	内容在交叉轴的对齐方式
+		--stretch(默认)	未设置高度,高度占满整个容器
+		--flex-start	起点对齐	
+		--flex-end	底部对齐
+		--center	居中对齐
+		--baseline	第一行文字的下边对齐
+	
+	(6)align-content
+		--stretch(默认)默认竖轴铺满整个元素
+		--flex-start	起点居中
+		--fiex-end	终点居中
+		--center	纵向居中
+		--space-between	两端对齐
+		--space-around	平均分配
+	
+二、项目属性
+	(1)order	排序(数值越小,排序越靠前)
+		--	order:数值(用以排列)(可用于做优先加载)
+		
+	(2)flex-grow	定义项目放大比例去分配剩余空间
+		--默认为0(有剩余空间也不会放大)
+		--flex-grow:分配空间数
+	
+	(3)flex-shrink	外层空间不够时,定义项目缩小
+		--flex-shrink:缩小比例	默认为1
+		-- 为0时表示如果空间不够了,也不缩小
+
+	(4)flex-basis	放大或缩小时,设置该属性的宽度永远不会变
+		--flex-basis:固定宽度(主轴)
+		--默认值为auto:宽度为该层指定的宽度,如果未指定宽度,则根据内容大小来指定
+	
+	(5)flex	结合属性 grow,shrink,basis
+		-- flex: grow shrink basis
+	
+	(6)align-self	指定元素单独item的对齐方式
+		--
+
+
+
+
+	
+	
+	
+	
+	
